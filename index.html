@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="MC Cleaning service" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon_64.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>MC Cleaning</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img
+          class="logo"
+          alt="mc cleaning logo"
+          src="img/mc_cleaning_logo_alt.png"
+        />
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#services">Services</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Contact</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="tel:1-412-867-5309"
+              ><ion-icon
+                class="phone-icon"
+                name="call"
+                alt="Call 412-867-5309"
+              ></ion-icon
+              >412.867.5309</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-txt-box">
+            <h1 class="heading-primary">
+              Professional <span>Home Cleaning</span> Service
+            </h1>
+            <p class="hero-description">
+              Reliable cleaners serving the Pittsburgh area.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm">Book Now</a>
+            <a href="#services" class="btn btn--outline">Services</a>
+            <div class="reviews">
+              <p class="review-txt"><span>1,000+</span> Happy customers</p>
+              <hr />
+              <p class="review-txt"><span>4.8/5</span> Star rating</p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="img/mcleaning-hero.webp" type="image/webp" />
+              <source srcset="img/mcleaning-hero.png" type="image/png" />
+
+              <img
+                src="img/mcleaning-hero.png"
+                class="hero-desktop"
+                alt="hand wearing a cleaning glove holding a bottle of cleaner"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="img/mcleaning-hero-mobile.webp"
+                type="image/webp"
+              />
+              <source srcset="img/mcleaning-hero-mobile.png" type="image/png" />
+              <img
+                src="img/mcleaning-hero-mobile.png"
+                class="hero-mobile"
+                alt="hand wearing a cleaning glove holding a bottle of cleaner"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-services grid grid--2-cols" id="services">
+        <div class="service-img-box">
+          <img
+            src="img/mcleaning-services.png"
+            class="service-img"
+            alt="bucket of cleaning supplies"
+          />
+        </div>
+        <div class="service-txt-box">
+          <span class="subheading">Services</span>
+          <h2 class="heading-secondary">
+            Top-quality cleaning tailored to your needs.
+          </h2>
+          <div class="services">
+            <div class="service">
+              <ion-icon name="home-outline" class="service-icon"></ion-icon>
+              <h2 class="service-title">Home</h2>
+            </div>
+            <div class="service">
+              <ion-icon name="business-outline" class="service-icon"></ion-icon>
+              <h2 class="service-title">Commercial</h2>
+            </div>
+            <div class="service">
+              <ion-icon
+                name="construct-outline"
+                class="service-icon"
+              ></ion-icon>
+              <h2 class="service-title">Construction</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">What our clients are saying</h2>
+          <div class="testimonials grid grid--2-cols grid-center-v">
+            <figure class="testimonial">
+              <blockquote class="testimonial-txt">
+                I am extremely satisfied with Mc Cleaning's top-notch cleaning
+                service. They exceeded all my expectations and left my home
+                sparkling clean. The team was professional, efficient, and
+                friendly. I highly recommend Mc Cleaning for anyone looking for
+                a reliable cleaning service.
+              </blockquote>
+              <p class="testimonial-name">Emily Thompson</p>
+              <ion-icon
+                name="chevron-back-circle"
+                class="testimonial-icon icon-back"
+              ></ion-icon>
+              <ion-icon
+                name="chevron-forward-circle"
+                class="testimonial-icon icon-forward"
+              ></ion-icon>
+            </figure>
+            <div class="testimonial-img-box">
+              <img
+                class="testimonial-img"
+                src="img/testimonials-img.jpg"
+                alt="woman wearing cleaning gloves"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta" id="cta">
+        <div class="cta-container">
+          <div class="cta">
+            <div class="cta-txt-box">
+              <h2 class="heading-secondary">Contact us today for a quote!</h2>
+
+              <form id="cta-form" class="cta-form" action="#">
+                <div>
+                  <label for="first-name">First Name</label>
+                  <input
+                    id="first-name"
+                    type="text"
+                    placeholder="John"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="last-name">Last Name</label>
+                  <input
+                    id="last-name"
+                    type="text"
+                    placeholder="Smith"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="jsmith@email.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    pattern="[0-9]{3}.[0-9]{3}.[0-9]{4}"
+                    placeholder="123.456.7890"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form" type="submit">Send</button>
+
+                <div id="successMessage" style="display: none"></div>
+              </form>
+            </div>
+          </div>
+          <div class="footer-call--container">
+            <a class="footer-call--btn" href="tel:1-412-867-5309"
+              ><ion-icon class="phone-icon" name="call"></ion-icon>412.867.5309
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="mc cleaning logo"
+              src="img/mc_cleaning_logo.png"
+            />
+          </a>
+
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#services">Services</a></li>
+            <li>
+              <a class="footer-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="footer-link" href="#cta">Contact</a></li>
+          </ul>
+
+          <ul class="social-links">
+            <li>
+              <a class="social-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="social-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">
+          Copyright &copy; <span class="year">2027</span> by MC Cleaning All
+          rights reserved.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
