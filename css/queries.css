@@ -323,10 +323,10 @@
 }
 
 /* ****************** */
-/* BELOW 368 (Mobile 3) */
+/* BELOW 432 (Mobile 3) */
 /* ****************** */
 
-@media (max-width: 23em) {
+@media (max-width: 27em) {
   .heading-secondary {
     font-size: 3.4rem;
   }
