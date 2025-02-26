@@ -340,16 +340,16 @@
   }
 
   .section-services {
-    padding: 5rem 6rem;
+    padding: 4rem;
     width: auto;
   }
 
   .service {
-    width: 75%;
+    width: 90%;
   }
 
   .testimonials-container {
-    padding: 5rem;
+    padding: 4rem;
   }
 
   .testimonial-txt {
@@ -362,7 +362,7 @@
   }
 
   .section-cta {
-    padding: 5rem;
+    padding: 4rem;
   }
 
   .cta-container {
