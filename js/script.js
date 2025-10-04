@@ -63,6 +63,57 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////
+// Testimonial Slider
+
+const testimonials = [
+  {
+    name: "Emily T.",
+    testimonial:
+      "I am extremely satisfied with Mc Cleaning's top-notch cleaning service. They exceeded all my expectations and left my home sparkling clean. The team was professional, efficient, and friendly. I highly recommend Mc Cleaning for anyone looking for a reliable cleaning service.",
+  },
+  {
+    name: "Sarah G.",
+    testimonial:
+      "MC Cleaning has been a game-changer for me! Their team is professional, thorough, and left my home sparkling clean with eco-friendly products. I also had them clean my office, and the transformation was amazing. I highly recommend them for anyone needing a reliable cleaning service!",
+  },
+  {
+    name: "Gage S.",
+    testimonial:
+      "MC Cleaning has completely transformed our office! Their team is punctual, professional, and incredibly thorough. Since we started using their services, our workspace has never looked better. I highly recommend MC Cleaning for any business seeking a clean and healthy environment!",
+  },
+];
+
+const slides = document.querySelector(".testimonial");
+const btnNext = document.querySelector(".icon-forward");
+const btnPrev = document.querySelector(".icon-back");
+
+let curSlide = 0;
+const maxSlide = testimonials.length;
+
+const goToSlide = function (slide) {
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+
+btnNext.addEventListener("click", () => {
+  curSlide = (maxSlide + curSlide + 1) % maxSlide;
+  displayTestimonial();
+});
+btnPrev.addEventListener("click", () => {
+  curSlide = (maxSlide + curSlide - 1) % maxSlide;
+  displayTestimonial();
+});
+
+let displayTestimonial = () => {
+  slides.innerHTML = `
+  <blockquote class="testimonial-txt">${testimonials[curSlide].testimonial}</blockquote>
+  <p class="testimonial-name">${testimonials[curSlide].name}</p>
+  `;
+};
+window.onload = displayTestimonial;
+
+///////////////////////////////////////////////////////
 // Form Submission
 document
   .getElementById("cta-form")
